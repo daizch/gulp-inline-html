@@ -5,7 +5,7 @@ const through = require('through2')
 var File = require('vinyl');
 var cheerio = require('cheerio');
 var isUrl = require('is-url')
-const extName = require('ext-name');
+
 
 function stringifyAttrs(attrs) {
   return Object.entries(attrs).map(function (entries) {
@@ -95,7 +95,7 @@ function inlineCode(opts) {
   function endStream(cb) {
     var self = this;
     Object.keys(files).forEach(fp => {
-      var ext = extName(fp)[0].ext;
+      var ext = path.extname(fp).slice(1);
       var file = files[fp];
 
       if (ext === 'html') {
