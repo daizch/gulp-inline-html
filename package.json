@@ -1,0 +1,31 @@
+{
+  "name": "gulp-inline-html",
+  "version": "0.0.1",
+  "description": "inline js & css into html file",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "gulp",
+    "inline",
+    "gulp-inline",
+    "gulp-inline-html",
+    "html",
+    "css",
+    "js"
+  ],
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/daizch/gulp-inline-html.git"
+  },
+  "author": "zechengdai",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.1",
+    "ext-name": "^5.0.0",
+    "is-url": "^1.2.4",
+    "through2": "^2.0.3",
+    "vinyl": "^2.2.0"
+  }
+}
